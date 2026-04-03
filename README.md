@@ -2,6 +2,8 @@
 
 KCM-CLI é uma ferramenta de terminal interativa escrita em Go para gerenciar perfis de configuração (snapshots) do KDE Plasma. Ele permite salvar todo o seu visual (temas, ícones, painéis, cursores, Klassy, wallpapers) e alternar entre eles instantaneamente.
 
+![Preview](assets/preview.gif)
+
 ## 🚀 Funcionalidades
 
 - **Snapshots Completos**: Salva configurações (`~/.config`) e assets locais (`~/.local/share/icons`, `~/.icons`, temas Aurorae, etc.).
