@@ -26,6 +26,7 @@ func SaveSnapshot(profileName string) error {
 	// 1. Coletar metadados
 	globalTheme, _ := kde.ReadConfig("kdeglobals", "KDE", "LookAndFeelPackage")
 	iconTheme, _ := kde.ReadConfig("kdeglobals", "Icons", "Theme")
+	desktopTheme, _ := kde.ReadConfig("plasmarc", "Theme", "name")
 	plasmaVer, _ := kde.GetPlasmaVersion()
 
 	metadata := config.ProfileMetadata{
@@ -34,6 +35,7 @@ func SaveSnapshot(profileName string) error {
 		PlasmaVersion: plasmaVer,
 		GlobalTheme:   globalTheme,
 		IconTheme:     iconTheme,
+		DesktopTheme:  desktopTheme,
 	}
 
 	metaPath := filepath.Join(profilesDir, "metadata.json")
@@ -84,6 +86,7 @@ func SaveSnapshot(profileName string) error {
 	}{
 		{base: ".local/share", name: "icons"},
 		{base: ".local/share", name: "plasma/look-and-feel"},
+		{base: ".local/share", name: "plasma/desktoptheme"},
 		{base: ".local/share", name: "aurorae"},
 		{base: ".local/share", name: "color-schemes"},
 		{base: "", name: ".icons"}, // Cursors legados

@@ -130,7 +130,7 @@ func (m model) updateListItems() (list.Model, tea.Cmd) {
 	for _, p := range profiles {
 		items = append(items, item{
 			title: p.Name,
-			desc:  fmt.Sprintf("Tema: %s | Criado: %s", p.GlobalTheme, p.CreatedAt.Format("02/01/2006 15:04")),
+			desc:  fmt.Sprintf("Global: %s | Desktop: %s | Criado: %s", p.GlobalTheme, p.DesktopTheme, p.CreatedAt.Format("02/01/2006 15:04")),
 		})
 	}
 	cmd := m.list.SetItems(items)
@@ -167,7 +167,7 @@ func StartUI() error {
 	for _, p := range profiles {
 		items = append(items, item{
 			title: p.Name,
-			desc:  fmt.Sprintf("Tema: %s | Criado: %s", p.GlobalTheme, p.CreatedAt.Format("02/01/2006 15:04")),
+			desc:  fmt.Sprintf("Global: %s | Desktop: %s | Criado: %s", p.GlobalTheme, p.DesktopTheme, p.CreatedAt.Format("02/01/2006 15:04")),
 		})
 	}
 

@@ -8,5 +8,6 @@ type ProfileMetadata struct {
 	PlasmaVersion string    `json:"plasma_version"`
 	GlobalTheme   string    `json:"global_theme"`
 	IconTheme     string    `json:"icon_theme"`
+	DesktopTheme  string    `json:"desktop_theme"`
 	HasCustomWall bool      `json:"has_custom_wallpaper"`
 }

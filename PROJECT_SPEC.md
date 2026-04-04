@@ -25,6 +25,7 @@ Para garantir fidelidade total, o script preserva links simbólicos:
 - `~/.local/share/icons/`: Ícones instalados localmente.
 - `~/.icons/`: Cursores e ícones (formato legado).
 - `~/.local/share/plasma/look-and-feel/`: Temas de layout.
+- `~/.local/share/plasma/desktoptheme/`: Estilos de desktop (Plasma Themes).
 - `~/.local/share/aurorae/`: Temas de decoração de janela.
 - `~/.local/share/color-schemes/`: Esquemas de cores.
 - **Wallpaper**: Identificado via config e copiado fisicamente para `share/wallpaper.*`.
